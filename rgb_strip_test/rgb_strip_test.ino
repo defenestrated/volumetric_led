@@ -10,10 +10,12 @@
 Adafruit_NeoPixel strips[] = {
   Adafruit_NeoPixel(10, 3, NEO_GRB + NEO_KHZ800),
   Adafruit_NeoPixel(20, 5, NEO_GRB + NEO_KHZ800),
-  Adafruit_NeoPixel(20, 6, NEO_GRB + NEO_KHZ800)
+  Adafruit_NeoPixel(20, 6, NEO_GRB + NEO_KHZ800),
+  Adafruit_NeoPixel(37, 9, NEO_GRB + NEO_KHZ800),
+  Adafruit_NeoPixel(5, 11, NEO_GRB + NEO_KHZ800)
 };
 
-#define NUM_STRIPS 3
+#define NUM_STRIPS 5
 
 int wait = 10;
 int period = 4000;
@@ -53,15 +55,29 @@ void loop() {
 
   for (int i = 0; i < NUM_STRIPS; i++) {
     float total = strips[i].numPixels();
-    int ix = int(where*total);
     boolean is_folded = i == 2;
-    Serial.print(is_folded);
+    int ix = is_folded ? int(where*(total/2)) : int(where*total);
 
-    if (current < 2000) {
-      strips[i].setPixelColor(ix, 255,255,255);
-      strips[i].setPixelColor((ix-1)%int(total), 0,0,0);
+    Serial.print(ix);
+    Serial.print(" ");
+
+    if (is_folded) {
+     if (current < 2000) {
+        strips[i].setPixelColor(ix, 255,255,255);
+        strips[i].setPixelColor(total-ix, 255,255,255);
+      }
+     else {
+       strips[i].setPixelColor(ix, 0,0,0);
+       strips[i].setPixelColor(total-ix, 0,0,0);
+     }
     }
-    /* else strips[i].setPixelColor(ix, 0,0,0); */
+
+    else {
+      if (current < 2000) {
+        strips[i].setPixelColor(ix, 255,255,255);
+      }
+      else strips[i].setPixelColor(ix, 0,0,0);
+    }
     /* if (half) { */
       /* strips[i].setPixelColor(5, 255,255,255); */
     /* } */
