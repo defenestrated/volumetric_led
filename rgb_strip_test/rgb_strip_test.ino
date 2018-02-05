@@ -8,14 +8,14 @@
 // Parameter 3 = pixel type flags, add together as needed:
 //   NEO_KHZ800  800 KHz bitstream (most NeoPixel products w/WS2812 LEDs)
 Adafruit_NeoPixel strips[] = {
-  Adafruit_NeoPixel(10, 3, NEO_GRB + NEO_KHZ800),
-  Adafruit_NeoPixel(20, 5, NEO_GRB + NEO_KHZ800),
-  Adafruit_NeoPixel(20, 6, NEO_GRB + NEO_KHZ800),
-  Adafruit_NeoPixel(37, 9, NEO_GRB + NEO_KHZ800),
-  Adafruit_NeoPixel(5, 11, NEO_GRB + NEO_KHZ800)
+  Adafruit_NeoPixel(20, 3, NEO_GRB + NEO_KHZ800)
+//  Adafruit_NeoPixel(20, 5, NEO_GRB + NEO_KHZ800),
+//  Adafruit_NeoPixel(20, 6, NEO_GRB + NEO_KHZ800),
+//  Adafruit_NeoPixel(37, 9, NEO_GRB + NEO_KHZ800),
+//  Adafruit_NeoPixel(5, 11, NEO_GRB + NEO_KHZ800)
 };
 
-#define NUM_STRIPS 5
+#define NUM_STRIPS 1
 
 int wait = 10;
 int period = 4000;
@@ -55,7 +55,7 @@ void loop() {
 
   for (int i = 0; i < NUM_STRIPS; i++) {
     float total = strips[i].numPixels();
-    boolean is_folded = i == 2;
+    boolean is_folded = true;
     int ix = is_folded ? int(where*(total/2)) : int(where*total);
 
     Serial.print(ix);
