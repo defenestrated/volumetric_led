@@ -2,8 +2,8 @@
 	"name" : "video-processing",
 	"version" : 1,
 	"creationdate" : -692725719,
-	"modificationdate" : -692725719,
-	"viewrect" : [ 0.0, 0.0, 300.0, 500.0 ],
+	"modificationdate" : -692468770,
+	"viewrect" : [ 11.0, 85.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -14,6 +14,14 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+
+		}
+,
+		"code" : 		{
+			"rearranger.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
 			}
 
 		}
