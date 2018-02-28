@@ -6,29 +6,29 @@
 				"id" : 1,
 				"data" : 				{
 					"number" : [ 5 ],
-					"number[1]" : [ 121 ],
+					"number[1]" : [ 32 ],
 					"textbutton" : [ 0 ],
 					"textbutton[1]" : [ 0 ],
 					"toggle" : [ 1 ],
 					"toggle[1]" : [ 0 ],
 					"toggle[2]" : [ 0 ],
-					"umenu" : [ 0 ],
-					"umenu[1]" : [ 1 ],
+					"umenu" : [ 1 ],
+					"umenu[1]" : [ 0 ],
 					"face-fx[1]::patterific" : [ -1 ],
 					"face-fx[1]::gswitch2" : [ 1 ],
 					"face-fx[1]::slider" : [ 0.863564 ],
 					"face-fx[1]::slider[1]" : [ 60.0 ],
 					"face-fx[1]::slider[2]" : [ 10 ],
 					"face-fx[1]::slider[3]" : [ 10 ],
-					"face-fx[1]::slider[4]" : [ 0.595447 ],
+					"face-fx[1]::slider[4]" : [ 0.840902 ],
 					"face-fx[1]::toggle" : [ 1 ],
 					"face-fx::patterific" : [ -1 ],
 					"face-fx::gswitch2" : [ 1 ],
-					"face-fx::slider" : [ 0.954473 ],
-					"face-fx::slider[1]" : [ 68.635643 ],
+					"face-fx::slider" : [ 0.863564 ],
+					"face-fx::slider[1]" : [ 41.362915 ],
 					"face-fx::slider[2]" : [ 9 ],
 					"face-fx::slider[3]" : [ 5 ],
-					"face-fx::slider[4]" : [ 0.840902 ],
+					"face-fx::slider[4]" : [ 0.868175 ],
 					"face-fx::toggle" : [ 1 ]
 				}
 
@@ -61,6 +61,38 @@
 					"face-fx::slider[2]" : [ 9 ],
 					"face-fx::slider[3]" : [ 5 ],
 					"face-fx::slider[4]" : [ 1.0 ],
+					"face-fx::toggle" : [ 0 ]
+				}
+
+			}
+,
+			"3" : 			{
+				"id" : 3,
+				"data" : 				{
+					"number" : [ 5 ],
+					"number[1]" : [ 32 ],
+					"textbutton" : [ 0 ],
+					"textbutton[1]" : [ 0 ],
+					"toggle" : [ 1 ],
+					"toggle[1]" : [ 1 ],
+					"toggle[2]" : [ 0 ],
+					"umenu" : [ 1 ],
+					"umenu[1]" : [ 0 ],
+					"face-fx[1]::patterific" : [ -1 ],
+					"face-fx[1]::gswitch2" : [ 0 ],
+					"face-fx[1]::slider" : [ 0.863564 ],
+					"face-fx[1]::slider[1]" : [ 14.999279 ],
+					"face-fx[1]::slider[2]" : [ 10 ],
+					"face-fx[1]::slider[3]" : [ 10 ],
+					"face-fx[1]::slider[4]" : [ 0.840902 ],
+					"face-fx[1]::toggle" : [ 0 ],
+					"face-fx::patterific" : [ -1 ],
+					"face-fx::gswitch2" : [ 0 ],
+					"face-fx::slider" : [ 0.681746 ],
+					"face-fx::slider[1]" : [ 9.544734 ],
+					"face-fx::slider[2]" : [ 9 ],
+					"face-fx::slider[3]" : [ 5 ],
+					"face-fx::slider[4]" : [ 0.868175 ],
 					"face-fx::toggle" : [ 0 ]
 				}
 
