@@ -1,0 +1,4 @@
+camera2 movement 1519787926476
+camera1 movement 1519787927039
+camera2 stillness 1519787927082
+camera1 stillness 1519787927514

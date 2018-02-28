@@ -78,17 +78,17 @@
 					"patching_rect" : [ 32.0, 424.0, 151.0, 23.0 ],
 					"restore" : 					{
 						"gswitch2" : [ 0 ],
-						"slider" : [ 5.499928 ],
-						"slider[1]" : [ 96.817459 ],
-						"slider[2]" : [ 20 ],
-						"slider[3]" : [ 21 ],
-						"slider[4]" : [ 0.459084 ],
+						"slider" : [ 2.0 ],
+						"slider[1]" : [ 60.0 ],
+						"slider[2]" : [ 10 ],
+						"slider[3]" : [ 10 ],
+						"slider[4]" : [ 1.0 ],
 						"toggle" : [ 0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr @autoname 1",
-					"varname" : "u617003594"
+					"varname" : "u164009506"
 				}
 
 			}
@@ -109,7 +109,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "pattrstorage patterific @savemode 0",
+					"text" : "pattrstorage patterific @savemode 3",
 					"varname" : "patterific"
 				}
 
@@ -200,7 +200,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 147.0, 142.361328, 45.0, 22.0 ],
-					"presentation_rect" : [ 148.5, 142.361328, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "vdelay"
 				}
@@ -391,7 +390,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 127.500793, 124.570168, 121.0, 20.0 ],
 					"style" : "",
-					"text" : "threshhold: 0.46"
+					"text" : "threshhold: 1.00"
 				}
 
 			}
@@ -405,7 +404,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 127.500793, 75.542099, 121.0, 20.0 ],
 					"style" : "",
-					"text" : "brightness: 5.50"
+					"text" : "brightness: 2.00"
 				}
 
 			}
@@ -419,7 +418,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 127.500793, 51.028069, 121.0, 20.0 ],
 					"style" : "",
-					"text" : "contrast: 96.82"
+					"text" : "contrast: 60.00"
 				}
 
 			}
@@ -433,7 +432,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 127.500793, 26.514034, 121.0, 20.0 ],
 					"style" : "",
-					"text" : "slide down: 21"
+					"text" : "slide down: 10"
 				}
 
 			}
@@ -447,7 +446,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 127.500793, 2.0, 121.0, 20.0 ],
 					"style" : "",
-					"text" : "slide up: 20"
+					"text" : "slide up: 10"
 				}
 
 			}

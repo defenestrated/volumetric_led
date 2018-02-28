@@ -1,0 +1,73 @@
+{
+	"pattrstorage" : 	{
+		"name" : "patterific",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"number" : [ 5 ],
+					"number[1]" : [ 127 ],
+					"textbutton" : [ 0 ],
+					"textbutton[1]" : [ 0 ],
+					"toggle" : [ 0 ],
+					"toggle[1]" : [ 0 ],
+					"toggle[2]" : [ 0 ],
+					"umenu" : [ 0 ],
+					"umenu[1]" : [ 0 ],
+					"face-fx[1]::patterific" : [ -1 ],
+					"face-fx[1]::gswitch2" : [ 0 ],
+					"face-fx[1]::slider" : [ 2.0 ],
+					"face-fx[1]::slider[1]" : [ 60.0 ],
+					"face-fx[1]::slider[2]" : [ 10 ],
+					"face-fx[1]::slider[3]" : [ 10 ],
+					"face-fx[1]::slider[4]" : [ 1.0 ],
+					"face-fx[1]::toggle" : [ 0 ],
+					"face-fx::patterific" : [ -1 ],
+					"face-fx::gswitch2" : [ 0 ],
+					"face-fx::slider" : [ 2.0 ],
+					"face-fx::slider[1]" : [ 60.0 ],
+					"face-fx::slider[2]" : [ 10 ],
+					"face-fx::slider[3]" : [ 10 ],
+					"face-fx::slider[4]" : [ 1.0 ],
+					"face-fx::toggle" : [ 0 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"number" : [ 5 ],
+					"number[1]" : [ 127 ],
+					"textbutton" : [ 0 ],
+					"textbutton[1]" : [ 0 ],
+					"toggle" : [ 0 ],
+					"toggle[1]" : [ 0 ],
+					"toggle[2]" : [ 0 ],
+					"umenu" : [ 0 ],
+					"umenu[1]" : [ 0 ],
+					"face-fx[1]::patterific" : [ -1 ],
+					"face-fx[1]::gswitch2" : [ 0 ],
+					"face-fx[1]::slider" : [ 2.0 ],
+					"face-fx[1]::slider[1]" : [ 60.0 ],
+					"face-fx[1]::slider[2]" : [ 10 ],
+					"face-fx[1]::slider[3]" : [ 10 ],
+					"face-fx[1]::slider[4]" : [ 1.0 ],
+					"face-fx[1]::toggle" : [ 0 ],
+					"face-fx::patterific" : [ -1 ],
+					"face-fx::gswitch2" : [ 0 ],
+					"face-fx::slider" : [ 2.0 ],
+					"face-fx::slider[1]" : [ 60.0 ],
+					"face-fx::slider[2]" : [ 10 ],
+					"face-fx::slider[3]" : [ 10 ],
+					"face-fx::slider[4]" : [ 1.0 ],
+					"face-fx::toggle" : [ 0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
