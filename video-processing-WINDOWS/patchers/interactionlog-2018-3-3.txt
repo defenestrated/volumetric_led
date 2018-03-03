@@ -1,6 +1,0 @@
-camera1 movement 1520118117540
-camera2 movement 1520118117544
-camera1 stillness 1520118118128
-camera2 stillness 1520118118134
-camera1 movement 1520118518744
-camera1 stillness 1520118518920

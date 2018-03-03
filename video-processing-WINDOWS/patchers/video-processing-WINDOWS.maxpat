@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 756.0, 88.0, 1157.0, 806.0 ],
+		"rect" : [ 489.0, 88.0, 1157.0, 806.0 ],
 		"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,6 +39,61 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-55",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 71.0, 789.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 507.625, 527.0, 87.0, 20.0 ],
+					"style" : "",
+					"text" : "invert Y output"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "gswitch2",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 40.0, 824.0, 39.0, 32.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 37.0, 788.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 480.375, 525.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 409.0, 780.0, 130.0, 22.0 ],
+					"style" : "",
+					"text" : "jit.dimmap @invert 0 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-69",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -58,7 +113,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 489.0, 554.0, 97.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 589.625, 483.0, 97.0, 20.0 ],
+					"presentation_rect" : [ 507.625, 494.0, 97.0, 20.0 ],
 					"style" : "",
 					"text" : "enable previews"
 				}
@@ -74,8 +129,8 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 414.0, 712.0, 39.0, 32.0 ],
-					"presentation_rect" : [ 483.0, 492.0, 0.0, 0.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "gswitch2[2]"
 				}
 
 			}
@@ -89,8 +144,8 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 457.0, 712.0, 39.0, 32.0 ],
-					"presentation_rect" : [ 526.0, 497.0, 0.0, 0.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "gswitch2[1]"
 				}
 
 			}
@@ -104,8 +159,9 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 461.75, 554.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 562.375, 483.0, 24.0, 24.0 ],
-					"style" : ""
+					"presentation_rect" : [ 480.375, 494.0, 24.0, 24.0 ],
+					"style" : "",
+					"varname" : "toggle[4]"
 				}
 
 			}
@@ -119,7 +175,8 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 499.0, 712.0, 39.0, 32.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "gswitch2"
 				}
 
 			}
@@ -145,7 +202,8 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 280.25, 794.0, 24.0, 24.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "toggle[3]"
 				}
 
 			}
@@ -209,10 +267,9 @@
 					"id" : "obj-28",
 					"linecount" : 2,
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 344.25, 839.0, 225.0, 36.0 ],
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 344.25, 839.0, 225.0, 35.0 ],
 					"style" : "",
 					"text" : "jit.gl.spoutsender nozzle @sendername vp_out"
 				}
@@ -257,7 +314,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1085.0, 210.0, 93.0, 36.0 ],
+					"patching_rect" : [ 1085.0, 210.0, 93.0, 35.0 ],
 					"style" : "",
 					"text" : "loadmess read patterific.json"
 				}
@@ -346,20 +403,25 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 900.0, 248.0, 151.0, 23.0 ],
 					"restore" : 					{
+						"gswitch2" : [ 1 ],
+						"gswitch2[1]" : [ 1 ],
+						"gswitch2[2]" : [ 1 ],
 						"number" : [ 5 ],
-						"number[1]" : [ 32 ],
+						"number[1]" : [ 127 ],
 						"textbutton" : [ 0 ],
 						"textbutton[1]" : [ 0 ],
 						"toggle" : [ 0 ],
-						"toggle[1]" : [ 1 ],
+						"toggle[1]" : [ 0 ],
 						"toggle[2]" : [ 0 ],
-						"umenu" : [ 1 ],
+						"toggle[3]" : [ 0 ],
+						"toggle[4]" : [ 1 ],
+						"umenu" : [ 0 ],
 						"umenu[1]" : [ 0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr @autoname 1",
-					"varname" : "u887001267"
+					"varname" : "u887003205"
 				}
 
 			}
@@ -444,7 +506,7 @@
 					"patching_rect" : [ 763.75, 74.0, 235.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 98.25, 17.0, 111.5, 69.0 ],
+					"presentation_rect" : [ 98.25, 17.0, 111.5, 67.0 ],
 					"style" : "",
 					"text" : "MAIN POWER (SPACE)"
 				}
@@ -730,7 +792,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-49",
-					"items" : [ "Microsoft® LifeCam Cinema(TM) #3", ",", "FaceTime HD Camera" ],
+					"items" : "FaceTime HD Camera",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -764,7 +826,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 287.25, 18.0, 107.0, 34.0 ],
+					"patching_rect" : [ 287.25, 18.0, 107.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 298.5, 165.0, 129.0, 20.0 ],
 					"style" : "",
@@ -840,7 +902,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-31",
-					"items" : [ "Microsoft® LifeCam Cinema(TM) #3", ",", "FaceTime HD Camera" ],
+					"items" : "FaceTime HD Camera",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -896,7 +958,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 101.0, 18.0, 107.0, 34.0 ],
+					"patching_rect" : [ 101.0, 18.0, 107.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 24.25, 165.0, 129.0, 20.0 ],
 					"style" : "",
@@ -1111,6 +1173,25 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"border" : 4,
+					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-57",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 461.25, 481.0, 52.0, 32.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 464.25, 483.0, 167.75, 77.0 ],
+					"proportion" : 0.39,
+					"style" : ""
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -1167,8 +1248,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
-					"midpoints" : [ 485.875, 699.0, 453.0, 699.0, 453.0, 825.0, 353.75, 825.0 ],
+					"destination" : [ "obj-37", 1 ],
 					"order" : 1,
 					"source" : [ "obj-135", 0 ]
 				}
@@ -1256,6 +1336,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-21", 0 ]
 				}
@@ -1288,6 +1375,28 @@
 				"patchline" : 				{
 					"destination" : [ "obj-52", 1 ],
 					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"midpoints" : [ 69.5, 866.0, 244.0, 866.0, 244.0, 769.0, 418.5, 769.0 ],
+					"source" : [ "obj-37", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-37", 0 ]
 				}
 
 			}
@@ -1585,67 +1694,59 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "camera-wrangler.maxpat",
-				"bootpath" : "Z:/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/patchers",
+				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "face-fx.maxpat",
-				"bootpath" : "Z:/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/patchers",
+				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vdelay.maxpat",
-				"bootpath" : "Z:/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/patchers",
+				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "patterific.json",
-				"bootpath" : "Z:/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/data",
+				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/data",
 				"patcherrelativepath" : "../data",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "motiondetector.maxpat",
-				"bootpath" : "Z:/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/patchers",
+				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "timestamp.js",
-				"bootpath" : "Z:/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/code",
+				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "elmer.maxpat",
-				"bootpath" : "Z:/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/patchers",
+				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rearranger.js",
-				"bootpath" : "Z:/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/code",
+				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "jit.pass.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "jit.gl.spoutsender.mxe64",
-				"type" : "mx64"
 			}
  ],
 		"autosave" : 0
