@@ -1,0 +1,17 @@
+camera1 movement 1520145351308
+camera1 stillness 1520145353586
+camera2 movement 1520145368768
+camera2 stillness 1520145374009
+camera1 movement 1520145412981
+camera2 movement 1520145414887
+camera2 stillness 1520145416100
+camera1 stillness 1520145417365
+camera1 movement 1520145417793
+camera1 stillness 1520145420227
+camera2 movement 1520145420452
+camera1 movement 1520145422929
+camera2 stillness 1520145423321
+camera1 stillness 1520145425080
+camera1 movement 1520145426102
+camera2 movement 1520145426439
+camera2 stillness 1520145433371

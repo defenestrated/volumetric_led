@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 257.0, 240.0, 690.0, 594.0 ],
+		"rect" : [ 34.0, 374.0, 723.0, 602.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -88,12 +88,13 @@
 ,
 					"style" : "",
 					"text" : "autopattr @autoname 1",
-					"varname" : "u164009506"
+					"varname" : "u418004943"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"autorestore" : "patterific.json",
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-72",
@@ -718,7 +719,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -822,11 +823,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-63",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -836,7 +837,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-64",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1374,7 +1375,23 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "vdelay.maxpat",
+				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "patterific.json",
+				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing/data",
+				"patcherrelativepath" : "../data",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

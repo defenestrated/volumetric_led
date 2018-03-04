@@ -32,7 +32,7 @@ for (var i = 0; i < scissors.length; i++) {
 
 
 /*
-
+FOR LEFT FACE:
 at time = 1:
 slice frame into 6
 column 1 goes to video stack 6, position 1
@@ -47,26 +47,40 @@ column 2 goes to video stack 5, position 2
 column 3 goes to video stack 4, position 2
 etc
 
+-------------------
+
+FOR RIGHT FACE:
+at time = 1:
+slice frame into 6
+column 1 goes to video stack 1, position 6
+column 2 goes to video stack 2, position 6
+column 3 goes to video stack 3, position 6
+
+at time = 2:
+column 1 goes to video stack 1, position 5
 */
 
+
+// LEFT FACING:
+// for each time slice:
+// for (var t = 0; t < 6; t++){
+//   for (var col = 0; col < 6; col++) {
+//     this.patcher.connect(scissors[t], col, glues[5-col], t)
+//   }
+//   // then connect all to the metaglue
+//   this.patcher.connect(glues[t], 0, lastglue, t)
+// }
+
+// RIGHT FACING:
 // for each time slice:
 for (var t = 0; t < 6; t++){
   for (var col = 0; col < 6; col++) {
-    this.patcher.connect(scissors[t], col, glues[5-col], t)
+    this.patcher.connect(scissors[t], col, glues[col], 5-t)
   }
   // then connect all to the metaglue
   this.patcher.connect(glues[t], 0, lastglue, t)
 }
 
-
-// for (var x = 0; x < glues.length; x++) {
-//   // for each glue
-//   for (var y = 0; y < scissors.length; y++) {
-//     // for each of this glue's inlets
-//       this.patcher.connect(scissors[y], x, glues[x], y)
-//   }
-
-// }
 
 this.patcher.connect(lastglue, 0, outie, 0)
 this.patcher.connect(meta_in, 0, meta_scissors, 0)
