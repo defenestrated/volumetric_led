@@ -24074,7 +24074,7 @@
       <intensity>
         <expression>0</expression>
         <actAsVariable>True</actAsVariable>
-        <value>20.7547169811321</value>
+        <value>100</value>
         <inputMode>0</inputMode>
         <data />
       </intensity>
@@ -24131,74 +24131,7 @@
               <data />
             </timeMultiplierFormula>
             <background slotId="1" type="0" />
-            <emitters>
-              <emitter>
-                <direction>255</direction>
-                <x>16</x>
-                <y>30</y>
-                <color>0</color>
-                <delaySpeedMultY>0</delaySpeedMultY>
-                <formulas>
-                  <formula>
-                    <name>internalEmitter</name>
-                    <expression>
-                    </expression>
-                    <actAsVariable>True</actAsVariable>
-                    <value>100</value>
-                    <inputMode>0</inputMode>
-                    <data />
-                  </formula>
-                  <formula>
-                    <name>emitterconservationratio</name>
-                    <expression>
-                    </expression>
-                    <actAsVariable>True</actAsVariable>
-                    <value>89.622641509434</value>
-                    <inputMode>0</inputMode>
-                    <data />
-                  </formula>
-                  <formula>
-                    <name>emitterspeed</name>
-                    <expression>
-                    </expression>
-                    <actAsVariable>True</actAsVariable>
-                    <value>0</value>
-                    <inputMode>0</inputMode>
-                    <data />
-                  </formula>
-                  <formula>
-                    <name>positionX</name>
-                    <expression>100-sawtooth(7.6)</expression>
-                    <actAsVariable>False</actAsVariable>
-                    <value>45.8947368420033</value>
-                    <inputMode>9</inputMode>
-                    <data>
-                      <function>sawtooth({0})</function>
-                      <speed>7.6</speed>
-                      <inverted>True</inverted>
-                    </data>
-                  </formula>
-                  <formula>
-                    <name>positionY</name>
-                    <expression>
-                    </expression>
-                    <actAsVariable>True</actAsVariable>
-                    <value>50.8474576271186</value>
-                    <inputMode>0</inputMode>
-                    <data />
-                  </formula>
-                  <formula>
-                    <name>waveAngle</name>
-                    <expression>
-                    </expression>
-                    <actAsVariable>True</actAsVariable>
-                    <value>0</value>
-                    <inputMode>0</inputMode>
-                    <data />
-                  </formula>
-                </formulas>
-              </emitter>
-            </emitters>
+            <emitters />
             <receptors>
               <receptor>
                 <x>0</x>
@@ -37191,70 +37124,7 @@
               <data />
             </timeMultiplierFormula>
             <background slotId="1" type="1" />
-            <emitters>
-              <emitter>
-                <direction>255</direction>
-                <x>18</x>
-                <y>30</y>
-                <color>0</color>
-                <formulas>
-                  <formula>
-                    <name>internalEmitter</name>
-                    <expression>
-                    </expression>
-                    <actAsVariable>True</actAsVariable>
-                    <value>100</value>
-                    <inputMode>0</inputMode>
-                    <data />
-                  </formula>
-                  <formula>
-                    <name>emitterconservationratio</name>
-                    <expression>
-                    </expression>
-                    <actAsVariable>True</actAsVariable>
-                    <value>100</value>
-                    <inputMode>0</inputMode>
-                    <data />
-                  </formula>
-                  <formula>
-                    <name>emitterspeed</name>
-                    <expression>
-                    </expression>
-                    <actAsVariable>True</actAsVariable>
-                    <value>0</value>
-                    <inputMode>0</inputMode>
-                    <data />
-                  </formula>
-                  <formula>
-                    <name>positionX</name>
-                    <expression>
-                    </expression>
-                    <actAsVariable>True</actAsVariable>
-                    <value>51.4285714285714</value>
-                    <inputMode>0</inputMode>
-                    <data />
-                  </formula>
-                  <formula>
-                    <name>positionY</name>
-                    <expression>
-                    </expression>
-                    <actAsVariable>True</actAsVariable>
-                    <value>50.8474576271186</value>
-                    <inputMode>0</inputMode>
-                    <data />
-                  </formula>
-                  <formula>
-                    <name>waveAngle</name>
-                    <expression>
-                    </expression>
-                    <actAsVariable>True</actAsVariable>
-                    <value>0</value>
-                    <inputMode>0</inputMode>
-                    <data />
-                  </formula>
-                </formulas>
-              </emitter>
-            </emitters>
+            <emitters />
             <receptors>
               <receptor>
                 <x>0</x>
@@ -50247,75 +50117,7 @@
               <data />
             </timeMultiplierFormula>
             <background slotId="1" type="2" />
-            <emitters>
-              <emitter>
-                <direction>255</direction>
-                <x>1</x>
-                <y>55</y>
-                <color>0</color>
-                <delaySpeedTransform>1</delaySpeedTransform>
-                <formulas>
-                  <formula>
-                    <name>internalEmitter</name>
-                    <expression>
-                    </expression>
-                    <actAsVariable>True</actAsVariable>
-                    <value>100</value>
-                    <inputMode>0</inputMode>
-                    <data />
-                  </formula>
-                  <formula>
-                    <name>emitterconservationratio</name>
-                    <expression>
-                    </expression>
-                    <actAsVariable>True</actAsVariable>
-                    <value>7.54716981132075</value>
-                    <inputMode>0</inputMode>
-                    <data />
-                  </formula>
-                  <formula>
-                    <name>emitterspeed</name>
-                    <expression>
-                    </expression>
-                    <actAsVariable>True</actAsVariable>
-                    <value>0</value>
-                    <inputMode>0</inputMode>
-                    <data />
-                  </formula>
-                  <formula>
-                    <name>positionX</name>
-                    <expression>sawtooth(7.6)</expression>
-                    <actAsVariable>False</actAsVariable>
-                    <value>3.26315789320867</value>
-                    <inputMode>9</inputMode>
-                    <data>
-                      <function>sawtooth({0})</function>
-                      <speed>7.6</speed>
-                    </data>
-                  </formula>
-                  <formula>
-                    <name>positionY</name>
-                    <expression>sin(20)</expression>
-                    <actAsVariable>False</actAsVariable>
-                    <value>92.9729974637829</value>
-                    <inputMode>9</inputMode>
-                    <data>
-                      <function>sin({0})</function>
-                      <speed>20</speed>
-                    </data>
-                  </formula>
-                  <formula>
-                    <name>waveAngle</name>
-                    <expression>
-                    </expression>
-                    <actAsVariable>True</actAsVariable>
-                    <value>0</value>
-                    <inputMode>0</inputMode>
-                    <data />
-                  </formula>
-                </formulas>
-              </emitter>
-            </emitters>
+            <emitters />
             <receptors>
               <receptor>
                 <x>0</x>
@@ -63428,6 +63230,6 @@
     </board>
   </model>
   <view>
-    <selectedGridId>7cf525f0-83aa-4ece-b473-ef0528e31d82</selectedGridId>
+    <selectedGridId>e0090897-4410-45fa-917a-dbf801ff09e4</selectedGridId>
   </view>
 </console>
