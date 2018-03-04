@@ -61,7 +61,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 258.0, 507.0, 150.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.500793, 174.07016, 161.55957, 22.0 ],
+					"presentation_rect" : [ 2.500793, 174.07016, 162.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -184,7 +184,7 @@
 					"patching_rect" : [ 267.5, 564.0, 128.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.500793, 202.07016, 161.55957, 46.0 ],
-					"saturation" : 1.0,
+					"saturation" : 0.0,
 					"varname" : "swatch"
 				}
 
@@ -585,14 +585,14 @@
 						"slider[1]" : [ 60.0 ],
 						"slider[2]" : [ 10 ],
 						"slider[4]" : [ 1.0 ],
-						"swatch" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0 ],
+						"swatch" : [ 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 1.0 ],
 						"toggle" : [ 0 ],
 						"toggle[1]" : [ 0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr @autoname 1",
-					"varname" : "u648008405"
+					"varname" : "u240007970"
 				}
 
 			}

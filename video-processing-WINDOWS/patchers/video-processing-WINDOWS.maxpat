@@ -39,12 +39,69 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-73",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 788.0, 147.0, 65.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 242.5, 818.0, 161.0, 20.0 ],
+					"style" : "",
+					"text" : "auto wipe timeout (seconds)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-59",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 728.0, 174.0, 45.0, 22.0 ],
+					"style" : "",
+					"text" : "* 1000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-56",
+					"maxclass" : "number",
+					"maximum" : 60,
+					"minimum" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 728.0, 144.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 180.75, 817.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 728.0, 201.0, 73.0, 22.0 ],
+					"style" : "",
+					"text" : "s bgtimeout"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-97",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 878.0, 384.0, 244.0, 22.0 ],
+					"patching_rect" : [ 873.125, 410.0, 244.0, 22.0 ],
 					"style" : "",
 					"text" : "if $i1 == 0 then set fixed else set continuous"
 				}
@@ -74,7 +131,7 @@
 					"patching_rect" : [ 906.625, 356.0, 90.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 435.0, 511.0, 67.0, 33.0 ],
+					"presentation_rect" : [ 435.0, 511.0, 69.0, 33.0 ],
 					"style" : "",
 					"text" : "bg capture (W)"
 				}
@@ -101,7 +158,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 693.0, 386.0, 244.0, 22.0 ],
+					"patching_rect" : [ 701.0, 415.0, 244.0, 22.0 ],
 					"style" : "",
 					"text" : "if $i1 == 0 then set fixed else set continuous"
 				}
@@ -131,7 +188,7 @@
 					"patching_rect" : [ 721.625, 358.0, 88.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 161.75, 511.0, 67.0, 33.0 ],
+					"presentation_rect" : [ 161.75, 511.0, 69.0, 33.0 ],
 					"style" : "",
 					"text" : "bg capture (Q)"
 				}
@@ -157,7 +214,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 923.625, 386.0, 46.0, 22.0 ],
+					"patching_rect" : [ 928.625, 386.0, 46.0, 22.0 ],
 					"style" : "",
 					"text" : "s bgs2"
 				}
@@ -684,25 +741,25 @@
 						"gswitch2[1]" : [ 1 ],
 						"gswitch2[2]" : [ 1 ],
 						"gswitch2[3]" : [ 1 ],
-						"number" : [ 3 ],
-						"number[1]" : [ 32 ],
-						"textbutton" : [ 1 ],
-						"textbutton[1]" : [ 1 ],
+						"number" : [ 10 ],
+						"number[1]" : [ 127 ],
+						"textbutton" : [ 0 ],
+						"textbutton[1]" : [ 0 ],
 						"toggle" : [ 0 ],
 						"toggle[1]" : [ 0 ],
-						"toggle[2]" : [ 1 ],
+						"toggle[2]" : [ 0 ],
 						"toggle[3]" : [ 0 ],
 						"toggle[4]" : [ 1 ],
 						"toggle[5]" : [ 1 ],
 						"toggle[6]" : [ 0 ],
 						"toggle[7]" : [ 0 ],
 						"umenu" : [ 0 ],
-						"umenu[1]" : [ 1 ]
+						"umenu[1]" : [ 0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr @autoname 1",
-					"varname" : "u100010542"
+					"varname" : "u779003466"
 				}
 
 			}
@@ -1073,7 +1130,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-49",
-					"items" : [ "Microsoft® LifeCam Cinema(TM) #5", ",", "FaceTime HD Camera" ],
+					"items" : "FaceTime HD Camera",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1183,7 +1240,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-31",
-					"items" : [ "Microsoft® LifeCam Cinema(TM) #5", ",", "FaceTime HD Camera" ],
+					"items" : "FaceTime HD Camera",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1732,15 +1789,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-81", 1 ],
-					"midpoints" : [ 601.0, 330.0, 504.0, 330.0, 504.0, 480.0, 434.75, 480.0 ],
-					"order" : 2,
-					"source" : [ "obj-4", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
 					"source" : [ "obj-40", 0 ]
 				}
@@ -1819,7 +1867,23 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-66", 0 ],
+					"order" : 1,
 					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
+					"order" : 0,
+					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"source" : [ "obj-56", 0 ]
 				}
 
 			}
@@ -1827,6 +1891,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-52", 2 ],
 					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-59", 0 ]
 				}
 
 			}
@@ -1916,15 +1987,6 @@
 					"destination" : [ "obj-65", 1 ],
 					"midpoints" : [ 247.75, 480.0, 456.0, 480.0, 456.0, 708.0, 443.5, 708.0 ],
 					"order" : 1,
-					"source" : [ "obj-66", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-81", 0 ],
-					"midpoints" : [ 247.75, 468.0, 19.75, 468.0 ],
-					"order" : 2,
 					"source" : [ "obj-66", 1 ]
 				}
 
@@ -2022,7 +2084,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-87", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-89", 0 ]
 				}
 
@@ -2030,7 +2092,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-97", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-89", 0 ]
 				}
 
