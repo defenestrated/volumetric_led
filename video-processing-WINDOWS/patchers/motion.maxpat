@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 784.0, 78.0, 659.0, 938.0 ],
+		"rect" : [ 379.0, 85.0, 659.0, 938.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,85 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-28",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 468.5, 392.0, 97.0, 23.0 ],
+					"style" : "",
+					"text" : "storagewindow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-29",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 412.0, 392.0, 39.0, 23.0 ],
+					"style" : "",
+					"text" : "write"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-30",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 412.0, 362.0, 151.0, 23.0 ],
+					"restore" : 					{
+						"gswitch2" : [ 0 ],
+						"gswitch2[1]" : [ 0 ],
+						"number" : [ 1 ],
+						"slider" : [ 2 ],
+						"slider[1]" : [ 60 ],
+						"toggle" : [ 0 ],
+						"toggle[1]" : [ 0 ]
+					}
+,
+					"style" : "",
+					"text" : "autopattr @autoname 1",
+					"varname" : "u017003839"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"autorestore" : "patterific.json",
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-72",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 412.0, 422.0, 220.0, 23.0 ],
+					"saved_object_attributes" : 					{
+						"client_rect" : [ 100, 100, 500, 600 ],
+						"parameter_enable" : 0,
+						"storage_rect" : [ 200, 200, 800, 500 ]
+					}
+,
+					"style" : "",
+					"text" : "pattrstorage patterific @savemode 3",
+					"varname" : "patterific"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -52,14 +131,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-27",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 434.0, 748.0, 39.0, 32.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "gswitch2[1]"
 				}
 
 			}
@@ -104,17 +183,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-26",
-					"maxclass" : "jit.pwindow",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 451.0, 266.0, 80.0, 60.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -148,7 +216,8 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 425.0, 623.0, 24.0, 24.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "toggle[1]"
 				}
 
 			}
@@ -279,7 +348,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 86.0, 623.0, 75.0, 33.0 ],
+					"patching_rect" : [ 86.0, 623.0, 75.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 24.0, 162.0, 112.0, 20.0 ],
 					"style" : "",
@@ -294,10 +363,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 271.0, 264.0, 121.0, 33.0 ],
+					"patching_rect" : [ 271.0, 264.0, 121.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 125.0, 51.0, 81.0, 33.0 ],
+					"presentation_rect" : [ 125.0, 51.0, 81.0, 34.0 ],
 					"style" : "",
 					"text" : "# of samples to smooth"
 				}
@@ -345,7 +414,8 @@
 					}
 ,
 					"style" : "",
-					"text" : "js timestamp.js"
+					"text" : "js timestamp.js",
+					"varname" : "js"
 				}
 
 			}
@@ -371,7 +441,8 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 255.0, 541.0, 24.0, 24.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "toggle"
 				}
 
 			}
@@ -404,7 +475,8 @@
 					"presentation_rect" : [ 70.0, 23.0, 45.0, 137.0 ],
 					"size" : 255.0,
 					"style" : "",
-					"thickness" : 25.0
+					"thickness" : 25.0,
+					"varname" : "slider[1]"
 				}
 
 			}
@@ -419,10 +491,11 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 271.0, 78.0, 57.0, 26.0 ],
+					"patching_rect" : [ 271.0, 78.0, 57.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 125.0, 23.0, 57.0, 26.0 ],
-					"style" : ""
+					"presentation_rect" : [ 125.0, 23.0, 57.0, 27.0 ],
+					"style" : "",
+					"varname" : "number"
 				}
 
 			}
@@ -442,7 +515,8 @@
 					"presentation_rect" : [ 24.0, 23.0, 45.0, 137.0 ],
 					"size" : 255.0,
 					"style" : "",
-					"thickness" : 25.0
+					"thickness" : 25.0,
+					"varname" : "slider"
 				}
 
 			}
@@ -455,7 +529,8 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 216.0, 346.0, 39.0, 32.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "gswitch2"
 				}
 
 			}
@@ -691,15 +766,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"order" : 1,
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"order" : 0,
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -722,6 +788,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-27", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-72", 0 ],
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-72", 0 ],
+					"source" : [ "obj-29", 0 ]
 				}
 
 			}
@@ -835,10 +915,21 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "timestamp.js",
-				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/code",
+				"bootpath" : "~/volumetric_led/video-processing-WINDOWS/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "patterific.json",
+				"bootpath" : "~/volumetric_led/video-processing-WINDOWS/data",
+				"patcherrelativepath" : "../data",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "jit.pass.mxe64",
+				"type" : "mx64"
 			}
  ],
 		"autosave" : 0

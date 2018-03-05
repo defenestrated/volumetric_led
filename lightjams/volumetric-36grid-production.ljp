@@ -63087,9 +63087,6 @@
     </grids>
     <medias>
       <slots>
-        <slot id="0" name="Microsoft® LifeCam Cinema(TM)">
-          <source relativePath="@live_capture&lt;node width=&quot;0&quot; height=&quot;0&quot; videoInput=&quot;-1&quot;&gt;&lt;moniker&gt;@device:pnp:\\?\usb#vid_045e&amp;amp;pid_075d&amp;amp;mi_00#6&amp;amp;15ad6694&amp;amp;0&amp;amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global&lt;/moniker&gt;&lt;/node&gt;" type="2" />
-        </slot>
         <slot id="1" name="vp_out">
           <source relativePath="@spoutvp_out" type="3" />
         </slot>

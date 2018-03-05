@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 78.0, 1196.0, 938.0 ],
+		"rect" : [ 42.0, 85.0, 1196.0, 938.0 ],
 		"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -38,6 +38,79 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-42",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 923.5, 430.0, 97.0, 23.0 ],
+					"style" : "",
+					"text" : "storagewindow"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-26",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 867.0, 430.0, 39.0, 23.0 ],
+					"style" : "",
+					"text" : "write"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 867.0, 400.0, 151.0, 23.0 ],
+					"restore" : 					{
+
+					}
+,
+					"style" : "",
+					"text" : "autopattr @autoname 1",
+					"varname" : "u522003711"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"autorestore" : "patterific.json",
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-72",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 867.0, 460.0, 220.0, 23.0 ],
+					"saved_object_attributes" : 					{
+						"client_rect" : [ 100, 100, 500, 600 ],
+						"parameter_enable" : 0,
+						"storage_rect" : [ 200, 200, 800, 500 ]
+					}
+,
+					"style" : "",
+					"text" : "pattrstorage patterific @savemode 3",
+					"varname" : "patterific"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.926117, 1.0, 0.985043, 1.0 ],
 					"blinkcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
@@ -257,7 +330,8 @@
 					}
 ,
 					"style" : "",
-					"text" : "js timestamp.js"
+					"text" : "js timestamp.js",
+					"varname" : "js[1]"
 				}
 
 			}
@@ -288,7 +362,8 @@
 					}
 ,
 					"style" : "",
-					"text" : "js timestamp.js"
+					"text" : "js timestamp.js",
+					"varname" : "js"
 				}
 
 			}
@@ -425,7 +500,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "bang" ],
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 442.0, 146.0, 226.0, 206.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 207.0, 2.5, 226.0, 206.0 ],
@@ -447,7 +522,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "bang" ],
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 131.0, 146.0, 228.0, 208.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.0, 2.5, 228.0, 208.0 ],
@@ -535,6 +610,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-72", 0 ],
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-3", 1 ]
 				}
@@ -551,6 +633,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-72", 0 ],
+					"source" : [ "obj-42", 0 ]
 				}
 
 			}
@@ -634,17 +723,28 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "motion.maxpat",
-				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/patchers",
+				"bootpath" : "~/volumetric_led/video-processing-WINDOWS/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "timestamp.js",
-				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/code",
+				"bootpath" : "~/volumetric_led/video-processing-WINDOWS/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "patterific.json",
+				"bootpath" : "~/volumetric_led/video-processing-WINDOWS/data",
+				"patcherrelativepath" : "../data",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "jit.pass.mxe64",
+				"type" : "mx64"
 			}
  ],
 		"autosave" : 0
