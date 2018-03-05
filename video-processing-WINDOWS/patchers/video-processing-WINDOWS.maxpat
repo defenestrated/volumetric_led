@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 367.0, 81.0, 867.0, 935.0 ],
+		"rect" : [ 171.0, 85.0, 867.0, 1229.0 ],
 		"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,12 +39,25 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1135.0, 120.0, 72.0, 22.0 ],
+					"style" : "",
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-73",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 788.0, 147.0, 65.0, 47.0 ],
+					"patching_rect" : [ 788.0, 147.0, 65.0, 48.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 242.5, 818.0, 161.0, 20.0 ],
 					"style" : "",
@@ -78,7 +91,8 @@
 					"patching_rect" : [ 728.0, 144.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 180.75, 817.0, 50.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "number[2]"
 				}
 
 			}
@@ -131,7 +145,7 @@
 					"patching_rect" : [ 906.625, 356.0, 90.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 435.0, 511.0, 69.0, 33.0 ],
+					"presentation_rect" : [ 435.0, 511.0, 69.0, 34.0 ],
 					"style" : "",
 					"text" : "bg capture (W)"
 				}
@@ -188,7 +202,7 @@
 					"patching_rect" : [ 721.625, 358.0, 88.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 161.75, 511.0, 69.0, 33.0 ],
+					"presentation_rect" : [ 161.75, 511.0, 69.0, 34.0 ],
 					"style" : "",
 					"text" : "bg capture (Q)"
 				}
@@ -601,9 +615,10 @@
 					"id" : "obj-28",
 					"linecount" : 2,
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 344.25, 839.0, 225.0, 35.0 ],
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 344.25, 839.0, 225.0, 36.0 ],
 					"style" : "",
 					"text" : "jit.gl.spoutsender nozzle @sendername vp_out"
 				}
@@ -648,7 +663,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1085.0, 210.0, 93.0, 35.0 ],
+					"patching_rect" : [ 1085.0, 210.0, 93.0, 36.0 ],
 					"style" : "",
 					"text" : "loadmess read patterific.json"
 				}
@@ -741,8 +756,9 @@
 						"gswitch2[1]" : [ 1 ],
 						"gswitch2[2]" : [ 1 ],
 						"gswitch2[3]" : [ 1 ],
-						"number" : [ 10 ],
-						"number[1]" : [ 127 ],
+						"number" : [ 5 ],
+						"number[1]" : [ 110 ],
+						"number[2]" : [ 1 ],
 						"textbutton" : [ 0 ],
 						"textbutton[1]" : [ 0 ],
 						"toggle" : [ 0 ],
@@ -759,7 +775,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr @autoname 1",
-					"varname" : "u779003466"
+					"varname" : "u095001213"
 				}
 
 			}
@@ -775,9 +791,9 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 900.0, 308.0, 288.0, 23.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 100, 100, 500, 600 ],
+						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
-						"storage_rect" : [ 200, 200, 800, 500 ]
+						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
 					"style" : "",
@@ -844,7 +860,7 @@
 					"patching_rect" : [ 713.5, 71.0, 235.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 98.25, 17.0, 111.5, 67.0 ],
+					"presentation_rect" : [ 98.25, 17.0, 111.5, 69.0 ],
 					"style" : "",
 					"text" : "MAIN POWER (SPACE)"
 				}
@@ -1130,7 +1146,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-49",
-					"items" : "FaceTime HD Camera",
+					"items" : [ "Microsoft® LifeCam Cinema(TM)", ",", "Microsoft® LifeCam Cinema(TM)" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1164,7 +1180,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 287.25, 18.0, 107.0, 33.0 ],
+					"patching_rect" : [ 287.25, 18.0, 107.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 298.5, 165.0, 129.0, 20.0 ],
 					"style" : "",
@@ -1240,7 +1256,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-31",
-					"items" : "FaceTime HD Camera",
+					"items" : [ "Microsoft® LifeCam Cinema(TM)", ",", "Microsoft® LifeCam Cinema(TM)" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1296,7 +1312,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 101.0, 18.0, 107.0, 33.0 ],
+					"patching_rect" : [ 101.0, 18.0, 107.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 24.25, 165.0, 129.0, 20.0 ],
 					"style" : "",
@@ -1831,6 +1847,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-48", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-50", 1 ],
 					"source" : [ "obj-49", 0 ]
 				}
@@ -2145,66 +2168,74 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "camera-wrangler.maxpat",
-				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/patchers",
+				"bootpath" : "~/volumetric_led/video-processing-WINDOWS/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "face-fx.maxpat",
-				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/patchers",
+				"bootpath" : "~/volumetric_led/video-processing-WINDOWS/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vdelay.maxpat",
-				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/patchers",
+				"bootpath" : "~/volumetric_led/video-processing-WINDOWS/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "patterific.json",
-				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/data",
+				"bootpath" : "~/volumetric_led/video-processing-WINDOWS/data",
 				"patcherrelativepath" : "../data",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "motiondetector.maxpat",
-				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/patchers",
+				"bootpath" : "~/volumetric_led/video-processing-WINDOWS/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "motion.maxpat",
-				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/patchers",
+				"bootpath" : "~/volumetric_led/video-processing-WINDOWS/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "timestamp.js",
-				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/code",
+				"bootpath" : "~/volumetric_led/video-processing-WINDOWS/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "elmer.maxpat",
-				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/patchers",
+				"bootpath" : "~/volumetric_led/video-processing-WINDOWS/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rearranger.js",
-				"bootpath" : "~/Active-Work/Freelance/ib5k/mc2-verizon/chandelier/volumetric_led/video-processing-WINDOWS/code",
+				"bootpath" : "~/volumetric_led/video-processing-WINDOWS/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "jit.pass.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "jit.gl.spoutsender.mxe64",
+				"type" : "mx64"
 			}
  ],
 		"autosave" : 0
