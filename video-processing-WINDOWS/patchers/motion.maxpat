@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -77,18 +77,18 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 412.0, 362.0, 151.0, 23.0 ],
 					"restore" : 					{
-						"gswitch2" : [ 0 ],
+						"gswitch2" : [ 1 ],
 						"gswitch2[1]" : [ 0 ],
-						"number" : [ 1 ],
-						"slider" : [ 2 ],
-						"slider[1]" : [ 60 ],
-						"toggle" : [ 0 ],
+						"number" : [ 30 ],
+						"slider" : [ 88 ],
+						"slider[1]" : [ 72 ],
+						"toggle" : [ 1 ],
 						"toggle[1]" : [ 0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr @autoname 1",
-					"varname" : "u017003839"
+					"varname" : "u418010471"
 				}
 
 			}
@@ -187,10 +187,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 482.0, 592.0, 70.0, 22.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 482.0, 592.0, 72.0, 22.0 ],
 					"style" : "",
-					"text" : "loadbang 1"
+					"text" : "loadmess 1"
 				}
 
 			}
@@ -254,7 +254,7 @@
 					"comment" : "bg subtract timeout",
 					"hint" : "",
 					"id" : "obj-15",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -348,7 +348,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 86.0, 623.0, 75.0, 34.0 ],
+					"patching_rect" : [ 86.0, 623.0, 75.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 24.0, 162.0, 112.0, 20.0 ],
 					"style" : "",
@@ -363,10 +363,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 271.0, 264.0, 121.0, 34.0 ],
+					"patching_rect" : [ 271.0, 264.0, 121.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 125.0, 51.0, 81.0, 34.0 ],
+					"presentation_rect" : [ 125.0, 51.0, 81.0, 33.0 ],
 					"style" : "",
 					"text" : "# of samples to smooth"
 				}
@@ -491,9 +491,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 271.0, 78.0, 57.0, 27.0 ],
+					"patching_rect" : [ 271.0, 78.0, 57.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 125.0, 23.0, 57.0, 27.0 ],
+					"presentation_rect" : [ 125.0, 23.0, 57.0, 26.0 ],
 					"style" : "",
 					"varname" : "number"
 				}
@@ -523,6 +523,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-42",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -609,7 +610,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-5",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -622,11 +623,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 92.0, 34.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -912,27 +913,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "timestamp.js",
-				"bootpath" : "~/volumetric_led/video-processing-WINDOWS/code",
-				"patcherrelativepath" : "../code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "patterific.json",
-				"bootpath" : "~/volumetric_led/video-processing-WINDOWS/data",
-				"patcherrelativepath" : "../data",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "jit.pass.mxe64",
-				"type" : "mx64"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

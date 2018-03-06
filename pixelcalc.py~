@@ -1,8 +1,0 @@
-import math
-print "\n"
-
-total = 7680
-
-sq = math.sqrt(total)
-
-print sq
